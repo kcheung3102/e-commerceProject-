@@ -7,3 +7,12 @@
 body {
   font-family: "Notable", "san-serif";
 }
+
+.navbar-logo {
+  height: 80px;
+  width: 80px;
+}
+
+.branding-title {
+font-family: 'Mansalva', cursive;
+}

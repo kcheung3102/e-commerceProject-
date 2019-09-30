@@ -1,86 +1,68 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
+MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBFormInline } from "mdbreact";
 import logo from "../Logo.svg";
 import cart from "../iconfinder_Cart.svg";
 
+
 class NavBar extends Component {
+  state = {
+    isOpen: false
+  };
+
+  toggleCollapse = () => {
+    this.setState({isOpen: !this.state.isOpen });
+  }
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link to="/">
-          <img src={logo} alt="shop logo" className="navbar-brand" />
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+      <MDBNavbar color="default-color" dark expand="md">
+      <MDBNavbarBrand>
+      <MDBNavLink to="/">
+        <img src={logo} alt="shop logo" className="navbar-logo" />
+      </MDBNavLink>
+        <h1 className="branding-title">ShopX</h1>
+      </MDBNavbarBrand>
+      <MDBNavbarToggler onClick={this.toggleCollapse} />
+      <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        <MDBNavbarNav left>
+          <MDBNavItem>
+              <MDBFormInline waves>
+                <div className="md-form my-2">
+                  <input className="form-control mr-sm-4" type="text" placeholder="Search for brand,color,etc." aria-label="Search" />
+                  <MDBIcon icon="search" />
+                </div>
+              </MDBFormInline>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        <MDBNavbarNav right>
+          <MDBNavItem active>
+            <MDBNavLink to="/">Home</MDBNavLink>
+          </MDBNavItem>
+        <MDBNavItem>
+          <MDBNavLink to="/details">About</MDBNavLink>
+        </MDBNavItem>
+        <MDBNavItem>
+          <MDBNavLink to="#!">Products</MDBNavLink>
+        </MDBNavItem>
+          <MDBNavItem>
+            <MDBNavLink className="waves-effect waves-light" to="/cart">
+              <i class="fas fa-cart-plus"> My Cart</i>
+            </MDBNavLink>
+          </MDBNavItem>
+          <MDBNavItem>
+            <MDBDropdown>
+              <MDBDropdownToggle nav caret>
+                <MDBIcon icon="user" />
+              </MDBDropdownToggle>
+              <MDBDropdownMenu className="dropdown-default">
+                <MDBDropdownItem href="#!">Log in</MDBDropdownItem>
+              </MDBDropdownMenu>
+            </MDBDropdown>
+          </MDBNavItem>
+        </MDBNavbarNav>
+      </MDBCollapse>
+    </MDBNavbar>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#">
-                Disabled
-              </a>
-            </li>
-          </ul>
-          <form className="form-inline my-2 my-lg-0">
-            <input
-              className="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              className="btn btn-outline-success my-2 my-sm-0"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
-        </div>
-      </nav>
     );
   }
 }
