@@ -3,3 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Notable", "san-serif";
+}
+
+.navbar {
+  background-color: #000000;
+  overflow: hidden;
+  align-items: flex-end;
+}
+
+.nav-link {
+  float: right;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 20px;
+  padding-bottom: 5px;
+}
