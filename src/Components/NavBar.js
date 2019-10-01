@@ -36,13 +36,13 @@ class NavBar extends Component {
           </MDBNavbarNav>
         <MDBNavbarNav right>
           <MDBNavItem active>
-            <MDBNavLink to="/">Home</MDBNavLink>
+            <MDBNavLink to="/Homepage">Home</MDBNavLink>
           </MDBNavItem>
         <MDBNavItem>
           <MDBNavLink to="/details">About</MDBNavLink>
         </MDBNavItem>
         <MDBNavItem>
-          <MDBNavLink to="#!">Products</MDBNavLink>
+          <MDBNavLink to="/">Products</MDBNavLink>
         </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink className="waves-effect waves-light" to="/cart">

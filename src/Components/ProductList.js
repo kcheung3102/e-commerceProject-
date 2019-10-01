@@ -4,7 +4,7 @@ class ProductList extends Component {
 
   render() {
     return (
-      <div>Product List </div>
+      <div>Product Stuff</div>
     );
   }
 

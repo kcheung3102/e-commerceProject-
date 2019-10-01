@@ -5,7 +5,9 @@ import NavBar from './Components/NavBar';
 import ProductList from './Components/ProductList';
 import Error from './Components/Error';
 import Details from './Components/Details';
+import Landing from './Components/Landing';
 import {Switch,Route} from 'react-router-dom';
+
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <React.Fragment>
       <NavBar />
       <Switch>
-        <Route exact path='/' component={ProductList} />
+        <Route exact path='/Homepage' component={Landing} />
+        <Route path='/' component={ProductList} />
         <Route path='/details' component={Details} />
         <Route path='/cart' component={Cart} />
         <Route component={Error} />

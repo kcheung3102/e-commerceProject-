@@ -16,3 +16,7 @@ body {
 .branding-title {
 font-family: 'Mansalva', cursive;
 }
+
+.carousel-inner {
+  opacity: 0.7;
+}
