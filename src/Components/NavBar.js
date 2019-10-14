@@ -15,7 +15,7 @@ class NavBar extends Component {
   }
   render() {
     return (
-      <MDBNavbar color="default-color" dark expand="md">
+      <MDBNavbar color="bg-dark text-white" dark expand="md">
       <MDBNavbarBrand>
       <MDBNavLink to="/">
         <img src={logo} alt="shop logo" className="navbar-logo" />
@@ -35,6 +35,16 @@ class NavBar extends Component {
             </MDBNavItem>
           </MDBNavbarNav>
         <MDBNavbarNav right>
+        <MDBNavItem>
+          <MDBDropdown>
+            <MDBDropdownToggle nav caret>
+              <MDBIcon icon="user" />
+            </MDBDropdownToggle>
+            <MDBDropdownMenu className="dropdown-default">
+              <MDBDropdownItem href="#!">Log in</MDBDropdownItem>
+            </MDBDropdownMenu>
+          </MDBDropdown>
+        </MDBNavItem>
           <MDBNavItem active>
             <MDBNavLink to="/Homepage">Home</MDBNavLink>
           </MDBNavItem>
@@ -48,16 +58,6 @@ class NavBar extends Component {
             <MDBNavLink className="waves-effect waves-light" to="/cart">
               <i class="fas fa-cart-plus"> My Cart</i>
             </MDBNavLink>
-          </MDBNavItem>
-          <MDBNavItem>
-            <MDBDropdown>
-              <MDBDropdownToggle nav caret>
-                <MDBIcon icon="user" />
-              </MDBDropdownToggle>
-              <MDBDropdownMenu className="dropdown-default">
-                <MDBDropdownItem href="#!">Log in</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
           </MDBNavItem>
         </MDBNavbarNav>
       </MDBCollapse>

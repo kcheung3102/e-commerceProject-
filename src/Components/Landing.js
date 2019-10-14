@@ -5,10 +5,12 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className='Landing'>
-      <section className="wrapper-carousel">
-          <Carousel />
-      </section>
+      <div className='container'>
+        <section className="row">
+          <div className="col-sm">
+            <Carousel />
+          </div>
+        </section>
       </div>
     );
   }

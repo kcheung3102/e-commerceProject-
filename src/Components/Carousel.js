@@ -8,8 +8,7 @@ import '../App.css';
 
 const CarouselPage = () => {
   return (
-    <MDBContainer className="carousel">
-      <div className='w-responsive text-center mx-auto p-3 mt-2'>
+    <MDBContainer className="carousel float-sm-left" Id="background-carousel">
       <MDBCarousel
         activeItem={1}
         length={3}
@@ -21,25 +20,27 @@ const CarouselPage = () => {
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-fluid"
                 src={img}
                 alt="nike shoes on foot"
               />
             </MDBView>
-          </MDBCarouselItem>
+          </MDBCarouselItem >
+
           <MDBCarouselItem itemId="2">
             <MDBView>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-fluid"
                 src={img_2}
                 alt="nike huraches"
               />
             </MDBView>
           </MDBCarouselItem>
+
           <MDBCarouselItem itemId="3">
             <MDBView>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-fluid"
                 src={img_3}
                 alt="air jordan 1"
               />
@@ -47,7 +48,6 @@ const CarouselPage = () => {
           </MDBCarouselItem>
         </MDBCarouselInner>
       </MDBCarousel>
-      </div>
     </MDBContainer>
   );
 }
