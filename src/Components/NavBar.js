@@ -45,11 +45,11 @@ class NavBar extends Component {
             </MDBDropdownMenu>
           </MDBDropdown>
         </MDBNavItem>
-          <MDBNavItem active>
+          <MDBNavItem active >
             <MDBNavLink to="/Homepage">Home</MDBNavLink>
           </MDBNavItem>
         <MDBNavItem>
-          <MDBNavLink to="/details">About</MDBNavLink>
+          <MDBNavLink to="/Details">About</MDBNavLink>
         </MDBNavItem>
         <MDBNavItem>
           <MDBNavLink to="/">Products</MDBNavLink>
