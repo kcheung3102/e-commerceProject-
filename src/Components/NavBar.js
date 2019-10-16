@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBFormInline } from "mdbreact";
+MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBFormInline, MDBContainer } from "mdbreact";
 import logo from "../Logo.svg";
 import cart from "../iconfinder_Cart.svg";
 
@@ -15,15 +15,15 @@ class NavBar extends Component {
   }
   render() {
     return (
-      <MDBNavbar color="bg-dark text-white" dark expand="md">
-      <MDBNavbarBrand>
-      <MDBNavLink to="/">
-        <img src={logo} alt="shop logo" className="navbar-logo" />
-      </MDBNavLink>
-        <h1 className="branding-title">ShopX</h1>
-      </MDBNavbarBrand>
-      <MDBNavbarToggler onClick={this.toggleCollapse} />
-      <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+      <MDBNavbar color="bg-dark text-white w-auto p-3" dark expand="md">
+          <MDBNavbarBrand>
+              <MDBNavLink to="/">
+                <img src={logo} alt="shop logo" className="navbar-logo" />
+              </MDBNavLink>
+                <h1 className="branding-title">ShopX</h1>
+          </MDBNavbarBrand>
+          <MDBNavbarToggler onClick={this.toggleCollapse} />
+            <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
         <MDBNavbarNav left>
           <MDBNavItem>
               <MDBFormInline waves>
@@ -61,7 +61,7 @@ class NavBar extends Component {
           </MDBNavItem>
         </MDBNavbarNav>
       </MDBCollapse>
-    </MDBNavbar>
+  </MDBNavbar>
 
     );
   }
