@@ -56,7 +56,7 @@ class NavBar extends Component {
         </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink className="waves-effect waves-light" to="/cart">
-              <i class="fas fa-cart-plus"> My Cart</i>
+              <MDBIcon icon="cart-plus" />
             </MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>

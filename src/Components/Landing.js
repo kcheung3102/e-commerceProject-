@@ -12,6 +12,7 @@ class Landing extends Component {
           <div className="col-sm">
             <Carousel />
           </div>
+
         </section>
       </div>
     );
