@@ -18,24 +18,24 @@ font-family: 'Mansalva', cursive;
 }
 
 .carousel {
-  height: 400px;
+  width: 600px;
+  margin: auto;
 }
 
-.carousel-item,
-.carousel-inner {
-  height: 100%;
-  width: auto;
-}
 
 .carousel-inner img {
   width: 100%;
   height: auto;
+  max-height: 400px;
 }
 
 .carousel-item {
   text-align: center;
 }
 
-#background-carousel {
-  background-color: #000000;
+@media (max-width: 600px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
 }

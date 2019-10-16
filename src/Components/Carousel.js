@@ -17,7 +17,7 @@ const CarouselPage = () => {
         className="z-depth-1"
       >
         <MDBCarouselInner className="carousel-inner">
-          <MDBCarouselItem itemId="1">
+          <MDBCarouselItem className="item" itemId="1">
             <MDBView>
               <img
                 className="d-block w-100 img-fluid"
@@ -27,7 +27,7 @@ const CarouselPage = () => {
             </MDBView>
           </MDBCarouselItem >
 
-          <MDBCarouselItem itemId="2">
+          <MDBCarouselItem  className="item" itemId="2">
             <MDBView>
               <img
                 className="d-block w-100 img-fluid"
@@ -37,7 +37,7 @@ const CarouselPage = () => {
             </MDBView>
           </MDBCarouselItem>
 
-          <MDBCarouselItem itemId="3">
+          <MDBCarouselItem className="item" itemId="3">
             <MDBView>
               <img
                 className="d-block w-100 img-fluid"
