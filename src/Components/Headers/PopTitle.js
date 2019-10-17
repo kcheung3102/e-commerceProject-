@@ -4,8 +4,8 @@ import '../../App.css';
 const PopTitle = () => {
   return(
     <div className="container" id="popular-brands-header">
-    <h2> Popular Brands </h2>
-    <a href = "#" > See All </a>
+    <h2 className="pop-brand-title"> Popular Brands </h2>
+    <a href = "#" className="see-all" > See All </a>
     </div>
 );
 

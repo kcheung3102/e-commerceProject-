@@ -27,7 +27,6 @@ font-family: 'Mansalva', cursive;
 /*********Landing*********/
 
 
-
 /*********JumbotronPage***********/
 .jumbo-bg {
    background-image: url('https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
@@ -73,19 +72,29 @@ font-family: 'Mansalva', cursive;
   }
 }
 
+@media (max-width: 767px ) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+}
+
 /*******PopularBrands*******/
 
 .col-popbrand {
-  float:left;
-  flex: 33%;
-  border: 1px solid #000000;
+  display:flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
   margin: 5px;
   padding: 1rem;
 }
 
 .row-popbrand {
   display: flex;
-  background-color:  #000000;
+  flex-direction: row;
+  overflow-x: auto;
+  margin: 0px -8px;
 }
 
 #popular-brands-header {
@@ -93,5 +102,39 @@ font-family: 'Mansalva', cursive;
   margin-top: 24px;
   align-items: flex-end;
   justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 700;
+
 }
+
+a {
+  text-decoration: none;
+}
+
+.see-all{
+  font-size: 14px;
+}
+
+.brand-logo {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  z-index: 1;
+  object-fit: contain;
+  left: 72.5%;
+  top: 0;
+}
+
+@media only screen and (max-width: 1199px){
+  .brand-logo{
+    width:50px;
+    height:50px;
+  }
+}
+
+.popbrand {
+  position: relative;
+  max-width: 100%;
+}
+
 

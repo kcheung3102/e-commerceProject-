@@ -15,17 +15,48 @@ const PopularBrands = () => {
     <MDBContainer className="container-pop">
       <MDBRow className="row-popbrand">
           <MDBCol className="col-popbrand" >
-            <img src={popimg_1} className="img-fluid" alt="off-white-jordan-1" />
-            <img src = {nikelogo}className = "img-fluid" alt = "off-white-jordan-1" / >
+            <img src = {
+              popimg_1
+            }
+            className = "img-fluid border-bottom border-dark popbrand"
+            alt = "off-white-1" />
+            <img src = {
+              nikelogo
+            }
+            className = "img-fluid brand-logo"
+            alt = "logo" />
           </MDBCol>
           <MDBCol  className="col-popbrand">
-            <img src={popimg_2} className="img-fluid" alt="yeezy-350" />
+            <img src = {
+              popimg_2
+            }
+            className = "img-fluid border-bottom border-dark popbrand"
+            alt = "yeezy-350" />
+               <img src = {
+                 yzylogo
+               }
+               className = "img-fluid brand-logo"
+               alt = "logo" />
           </MDBCol>
           <MDBCol className="col-popbrand">
-            <img src={popimg_3} className="img-fluid" alt="air-jordan-cny" />
+            <img src={popimg_3} className="img-fluid border-bottom border-dark popbrand" alt="air-jordan-cny" />
+               <img src = {
+                 jordanlogo
+               }
+               className = "img-fluid brand-logo"
+               alt = "logo" />
           </MDBCol>
           <MDBCol className="col-popbrand">
-            <img src={popimg_4} className="img-fluid" alt="air-jordan-cny" />
+            <img src = {
+              popimg_4
+            }
+            className = "img-fluid border-bottom border-dark popbrand"
+            alt = "shoe" />
+              < img src = {
+                adidaslogo
+              }
+              className = "img-fluid brand-logo"
+              alt = "logo" / >
           </MDBCol>
       </MDBRow>
     </MDBContainer>
