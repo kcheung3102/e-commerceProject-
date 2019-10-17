@@ -5,6 +5,10 @@ import popimg_1 from '../images/off-white-air-jordan-1.jpg';
 import popimg_2 from '../images/yeezy_350.jpg';
 import popimg_3 from '../images/jordan-cny.jpg';
 import popimg_4 from '../images/adidas-Ultra-Boost-4.jpg';
+import nikelogo from '../images/nike-logo.jpg';
+import adidaslogo from '../images/adidas-logo.jpg';
+import jordanlogo from '../images/jordan-logo.jpg';
+import yzylogo from '../images/yzy-logo.jpg';
 
 const PopularBrands = () => {
   return (
@@ -12,6 +16,7 @@ const PopularBrands = () => {
       <MDBRow className="row-popbrand">
           <MDBCol className="col-popbrand" >
             <img src={popimg_1} className="img-fluid" alt="off-white-jordan-1" />
+            <img src = {nikelogo}className = "img-fluid" alt = "off-white-jordan-1" / >
           </MDBCol>
           <MDBCol  className="col-popbrand">
             <img src={popimg_2} className="img-fluid" alt="yeezy-350" />

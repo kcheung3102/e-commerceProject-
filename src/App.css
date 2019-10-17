@@ -8,6 +8,13 @@ body {
   font-family: "Notable", "san-serif";
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .navbar-logo {
   height: 80px;
   width: 80px;
@@ -16,6 +23,9 @@ body {
 .branding-title {
 font-family: 'Mansalva', cursive;
 }
+
+/*********Landing*********/
+
 
 
 /*********JumbotronPage***********/
@@ -36,13 +46,13 @@ font-family: 'Mansalva', cursive;
 
 
 
-
 /******Carousel*****/
 
 
 .carousel {
   width: 650px;
   margin: auto;
+  float:left;
 }
 
 
@@ -77,3 +87,11 @@ font-family: 'Mansalva', cursive;
   display: flex;
   background-color:  #000000;
 }
+
+#popular-brands-header {
+  display:flex;
+  margin-top: 24px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+

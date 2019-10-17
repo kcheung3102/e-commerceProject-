@@ -8,7 +8,8 @@ import '../App.css';
 
 const CarouselPage = () => {
   return (
-    <MDBContainer className="carousel" Id="background-carousel">
+     <MDBContainer className = "carousel"
+     Id = "background-carousel" >
       <MDBCarousel
         activeItem={1}
         length={3}

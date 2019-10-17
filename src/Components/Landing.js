@@ -15,14 +15,8 @@ class Landing extends Component {
               <div className="col-sm">
                 <Carousel />
               </div>
-              <div className="col-sm">
-                <Carousel />
-              </div>
-              <div className="col-sm">
-                <Carousel />
-              </div>
           </div>
-        </div>
+        </div> <hr/ >
         <PopTitle />
         <PopularBrands />
       </div>
