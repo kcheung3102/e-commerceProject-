@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBJumbotron, MDBContainer, MDBBtn, MDBCol } from "mdbreact";
+import { MDBJumbotron, MDBContainer, MDBBtn, MDBCol, } from "mdbreact";
 
 
 const JumbotronPage = () => {
